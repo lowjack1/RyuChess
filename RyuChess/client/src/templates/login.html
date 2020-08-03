@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>RyuChess</title>
+    <!-- Icons-->
+    <link href="{{ static_url('vendors/coreui/dist/vendors/@coreui/icons/css/coreui-icons.min.css') }}" rel="stylesheet" />
+    <link href="{{ static_url('vendors/coreui/dist/vendors/flag-icon-css/css/flag-icon.min.css') }}" rel="stylesheet" />
+    <link href="{{ static_url('vendors/coreui/dist/vendors/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" />
+    <link href="{{ static_url('vendors/coreui/dist/vendors/simple-line-icons/css/simple-line-icons.css') }}" rel="stylesheet" />
+    <!-- Main styles for this application-->
+    <link href="{{ static_url('vendors/coreui/dist/css/style.css') }}" rel="stylesheet" />
+    <link href="{{ static_url('vendors/coreui/dist/vendors/pace-progress/css/pace.min.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ static_url('css/login.css') }}">
+</head>
+
+<body>
+    <div class="row justify-content-center">
+        <div class="col-xl-4 col-md-6 col-sm-12 vr-center">
+            <div class="card">
+                <div class="card-body">
+                    <form>
+                        <div class="row justify-content-center">
+                            <div class="col-12 text-center" style="padding-bottom: 1.5em;">
+                                <div class="brand-label">
+                                    <a href="/">Ryuchess</a>
+                                </div>
+                                <div class="signup-text-div"><span>Login Here</span></div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="callout callout-info">
+                                    <div class="form-group">
+                                        <label>Username</label>
+                                        <input class="form-control" name="username" type="text" placeholder="shinigami" required />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12">
+                                <div class="callout callout-info">
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input class="form-control" name="email" type="text" placeholder="***********" required/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h6 class="mb-0"><a href="#">Forgot Password ?</a></h6>
+
+                            <div class="col-md-12 col-sm-12 text-center signup-btn-div">
+                                <button class="btn btn-primary btn-md signup-btn">
+                                    <i class="fa fa-dot-circle-o"></i> LOG IN
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="{{ static_url('vendors/coreui/dist/vendors/jquery/js/jquery.min.js') }}"></script>
+    <script src="{{ static_url('vendors/coreui/dist/vendors/popper.js/js/popper.min.js') }}"></script>
+    <script src="{{ static_url('vendors/coreui/dist/vendors/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ static_url('vendors/coreui/dist/vendors/pace-progress/js/pace.min.js') }}"></script>
+    <script src="{{ static_url('vendors/coreui/dist/vendors/perfect-scrollbar/js/perfect-scrollbar.min.js') }}"></script>
+    <script src="{{ static_url('vendors/coreui/dist/vendors/@coreui/coreui/js/coreui.min.js') }}"></script>
+    <script src="{{ static_url('js/signup.js') }}"></script>
+</body>
+</html>

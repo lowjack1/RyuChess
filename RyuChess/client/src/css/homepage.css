@@ -1,0 +1,112 @@
+.user-name-span {
+    vertical-align: middle;
+    font-size: 1.35em;
+    font-weight: bolder;
+    color: #5D6D7E
+}
+
+.content-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5em;
+}
+
+.content-item-1 {
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+
+.content-item-2 {
+    grid-column: 3 / -1;
+    text-align: center;
+}
+
+.content-item-5 {
+    grid-column: 1 / span 2;
+    /* padding-right: 1em; */
+}
+
+.content-item-6 {
+    grid-column: 3 / span 4;
+    padding-right: 0.5em;
+    /* padding-left: 1em; */
+}
+
+.content-item-7 {
+    grid-column: 1 / -1;
+}
+
+.leaderboard-text {
+    letter-spacing: 1.5px;
+    font-size: 2em;
+    padding: 0em  .5em;
+}
+
+.card-header > i {
+    margin-right: 0;
+    font-size: 2em;
+}
+
+th, td {
+    vertical-align: middle!important;
+    font-size: 1.3em;
+}
+
+.leaderboard-username {
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.win-icon {
+    transform: rotate(270deg);
+}
+
+.lose-icon {
+    transform: rotate(90deg);
+}
+
+.span-ng {
+    font-weight: bolder;
+    font-size: 1.7em;
+}
+
+/* play with friend button */
+.btn-game {
+    font-size: 1.3em;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    background-color: #34BDDB;
+    border-color: #34BDDB;
+}
+
+.btn-play {
+    letter-spacing: 0.05em;
+    font-size: 1.6em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #FABD1C;
+    border-color: #FABD1C;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input-timer {
+    width: 60px;
+    display: inline;
+}

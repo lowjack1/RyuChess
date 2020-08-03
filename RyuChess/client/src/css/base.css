@@ -1,0 +1,60 @@
+.main .container-fluid {
+    padding: 0 15px;
+}
+
+.app-body {
+    margin-top: 0!important;
+}
+
+/* navigation bar */
+.navbar-font-md
+{
+  border-radius: 0px;
+  font-size: 1.2em;
+}
+
+/* logo or main heading */
+#logo
+{
+  font-size:1.4em;
+  font-weight:bolder;
+  color:#00004d;
+  letter-spacing:2px;
+}
+/* navigation links*/
+.link a
+{
+  color:#01325d;
+  margin:0 15px 0 15px;
+  letter-spacing:1.5px;
+}
+/* navigation link with right border */
+.about-link
+{
+  padding-right:6px;
+  border-right:solid 1px #ccc;
+}
+/* sign up link button and toggle button */
+.signup-link
+{
+  color:#f2f2f2;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0,0,0,.2);
+  border-radius: 2px;
+  background-color: #fa6a48;
+}
+
+.signup-link a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  background-color: #FF0000;
+}
+
+.nav > li {
+    padding: 0.5em 0em;
+}
+

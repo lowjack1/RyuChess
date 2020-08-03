@@ -1,0 +1,92 @@
+{% extends base.html %}
+
+{% block resources_header %}
+<link rel="stylesheet" href="{{ static_url('css/homepage.css')}}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css">
+{% end %}
+
+{% block main %}
+<div class="row justify-content-center">
+    <div class="col-lg-6 col-md-12">
+        <div class="card" id="leaderboard_card">
+            <div class="card-header bg-primary text-center">
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+                <span class="leaderboard-text">Leaderboard</span>
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+            </div>
+            <div class="card-body" style="padding: 0">
+                <div class="table-responsive leaderboard_table">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6 col-md-12">
+        <div class="content-container">
+            <div class="content-item-1">
+                <span class="user-name-span white">Gary Kasparov <small style="padding: 0.5em">vs</small> Robert James</span>
+            </div>
+            <div class="content-item-2">
+                <span class="user-name-span white">fastboot <small style="padding: 0.5em">vs</small> lowjack</span>
+            </div>
+            <!-- chessboard 1 -->
+            <div class="content-item-5" id="board1"></div>
+            <!-- chessboard 2 -->
+            <div class="content-item-6" id="board2"></div>
+            <!-- Start New Game option (Play anonymously if not sign in) -->
+            <div class="content-item-7">
+                <div class="card" id="new_game_card">
+                    <div class="card-header bg-success text-center">
+                        <span class="span-ng">Start New Game </span>
+                    </div>
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="w-100">
+                                    <button class="btn btn-primary btn-game btn-block" name="play_ryu_btn">Play with Ryu</button>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12 mt-4 mt-sm-0">
+                                <div class="w-100">
+                                    <button class="btn btn-primary btn-game btn-block" name="play_friend_btn">Play with Friend</button>
+                                </div>
+                                <div>
+                                    <select class="form-control" name="user_friend_dropdown" style="display: none;" data-placeholder="Select a friend">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row justify-content-center mt-4">
+                            <div class="col-12 text-center">
+                                <div class="input-group">
+                                    <input type="number" class="form-control input-timer" min="1" value="10" />
+                                    <div class="input-group-append">
+                                      <span class="input-group-text" id="basic-addon2">MIN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center mt-4">
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <button class="btn btn-play" name="start_game_btn">Play</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% end %}
+
+{% block resources_footer %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<script src="{{ static_url('js/homepage.js') }}"></script>
+{% end %}

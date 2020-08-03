@@ -1,0 +1,29 @@
+{% extends base.html %}
+
+{% block resources_header %}
+<link rel="stylesheet" href="{{ static_url('css/play_game.css')}}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.css">
+{% end %}
+
+{% block main %}
+<div class="content-container">
+    <div class="content-item-1">
+        afjdkf
+    </div>
+    
+    <div class="content-item-2">
+        <div id="board" style="width: 100%; padding-top:2.3em"></div>
+    </div>
+
+    <div class="content-item-3">
+        adsasfdsfjk
+    </div>
+</div>
+
+{% end %}
+
+{% block resources_footer %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.js"></script>
+<script src="{{ static_url('js/play_game.js') }}"></script>
+{% end %}

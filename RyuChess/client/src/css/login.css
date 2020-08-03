@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background: linear-gradient(rgba(149, 165, 166  ,.5), rgba(149, 165, 166  ,.5)), url('../images/chess_background_login.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+.vr-center {
+    padding: 5em 2em 0em 2em;
+}
+
+.brand-label {
+    font-size: 3em;
+    font-style: italic;
+    font-family: sans-serif;
+    letter-spacing: 0.05em;
+    
+    padding-bottom: 0.3em;
+}
+
+.signup-text-div {
+    font-size: 1.8em;
+    color: #3498DB;
+}
+
+.signup-btn {
+    letter-spacing: 1px;
+}
+
+.signup-btn-div {
+    padding-top: 1.2em;
+    padding-bottom: 1em;
+}
