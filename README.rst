@@ -3,7 +3,7 @@ Ryu
 
 A Chess engine developed in python using Tornado and PostgreSQL.
 
-Details
+Details:
 --------
 
 
